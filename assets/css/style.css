@@ -38,6 +38,17 @@ body {
 
 img {
   max-width: 100%; }
+.logo {
+  max-width: 20%;
+}
+@media (max-width: 767px) {
+  .logo {
+    display: flex;
+    max-width: 40%;
+    float: right;
+    align-items: center;
+  }
+}
 
 a:focus,
 input:focus,
