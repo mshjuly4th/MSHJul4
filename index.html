@@ -418,11 +418,11 @@
                 </div>
             </div> <!-- row -->
             <div class="row client-active">
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/platinum/client-1.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/platinum/client-2.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/platinum/client-3.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/platinum/client-4.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/platinum/client-5.png" alt="Sponsor"></div> <!-- single client --></div>
+                {% for image in site.static_files %}
+                    {% if image.path contains 'assets/images/sponsors/platinum' %}
+                    <div class="col-lg-3"><div class="imgcontainer single-client"><img src="{{ image.path }}" alt="Sponsor"><div class="overlay"><div class="text">Hello World</div></div></div></div>
+                    {% endif %}
+                {% endfor %}
             </div> <!-- row -->
             <!--====== PLATINUM ENDS ======-->
             <!--====== GOLD STARTS ======-->
@@ -434,16 +434,11 @@
                 </div>
             </div> <!-- row -->
             <div class="row client-active">
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/goldbergs.jpeg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/jimdove.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/logo-investors-bank-large.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/marcketta.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/miggins-logo.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/moonshine.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/mosessinger.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/playabowls.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/roxburysmall.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/gold/sprinkler.png" alt="Sponsor"></div> <!-- single client --></div>
+                {% for image in site.static_files %}
+                    {% if image.path contains 'assets/images/sponsors/gold' %}
+                    <div class="col-lg-3"><div class="imgcontainer single-client"><img src="{{ image.path }}" alt="Sponsor"><div class="overlay"><div class="text">Hello World</div></div></div></div>
+                    {% endif %}
+                {% endfor %}
             </div> <!-- row -->
             <!--====== GOLD ENDS ======-->
             <!--====== SILVER STARTS ======-->
@@ -455,31 +450,11 @@
                 </div>
             </div> <!-- row -->
             <div class="row client-active">
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/about-clerk.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/americanlegion.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/Avalon.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/btasmall.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/CaseyKeller.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/coopschool.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/frontcenter-large.jpg" alt="Sponsor"></div> <!-- single client --></div>        
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/greennectar.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/hardware.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/Hilton-Logo-1.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/indianamerican.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/jweill.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/lindasflorist.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/meadowbrooksmall.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/MFDLogo.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/mia-logo-1.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/MPBA.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/MSHChineseAssocsmall.jpg" alt="Sponsor"></div> <!-- single client --></div>     
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/NewPalumbos.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/RBHsmall.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/shorthillsmall.jpg" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/studio1200small.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/TheSportsAcademy.JPG" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/wasserman.png" alt="Sponsor"></div> <!-- single client --></div>
-                <div class="col-lg-3"><div class="single-client"><img src="assets/images/sponsors/silver/wilber.jpg" alt="Sponsor"></div> <!-- single client --></div>
+                {% for image in site.static_files %}
+                    {% if image.path contains 'assets/images/sponsors/silver' %}
+                    <div class="col-lg-3"><div class="imgcontainer single-client"><img src="{{ image.path }}" alt="Sponsor"><div class="overlay"><div class="text">Hello World</div></div></div></div>
+                    {% endif %}
+                {% endfor %}
             </div> <!-- row -->
             <!--====== SILVER ENDS ======-->
             <!--====== BRONZE STARTS ======-->
@@ -491,7 +466,11 @@
                 </div>
             </div> <!-- row -->
             <div class="row client-active">
-                <div class="col-lg"><div class="single-client"><img src="assets/images/sponsors/bronze/logo@2x.png" alt="Sponsor"></div> <!-- single client --></div>
+                {% for image in site.static_files %}
+                    {% if image.path contains 'assets/images/sponsors/bronze' %}
+                    <div class="col-lg-3"><div class="imgcontainer single-client"><img src="{{ image.path }}" alt="Sponsor"><div class="overlay"><div class="text">Hello World</div></div></div></div>
+                    {% endif %}
+                {% endfor %}
             </div> <!-- row -->
             <!--====== BRONZE ENDS ======-->
         </div> <!-- container -->
